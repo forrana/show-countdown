@@ -1,0 +1,13 @@
+body section{
+  width: 95vw;
+  height: 95vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 40px;
+}
+
+body section h1 {
+  text-align: center;
+}

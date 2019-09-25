@@ -13,9 +13,9 @@ function calculateCountDown() {
 
   let daysLeft = Math.round(hoursLeft / 24)
   let weeksLeft =Math.round(daysLeft / 7)
-  let secondsLeftStr =  Math.round(secondsLeft).toLocaleString(undefined,{minimumIntegerDigits: 2})
-  let minutesLeftStr =  Math.round(minutesLeft).toLocaleString(undefined,{minimumIntegerDigits: 2})
-  let hoursLeftStr =  Math.round(hoursLeft).toLocaleString(undefined,{minimumIntegerDigits: 2})
+  let secondsLeftStr = ("" + Math.round(secondsLeft)).padStart(2, "0")
+  let minutesLeftStr = ("" + Math.round(minutesLeft)).padStart(2, "0")
+  let hoursLeftStr =  ("" + Math.round(hoursLeft)).padStart(2, "0")
   countdownTimer.innerHTML = `${hoursLeftStr}:${minutesLeftStr}:${secondsLeftStr}`
   countdownDater.innerHTML = `${weeksLeft} <small>weeks</small>, ${daysLeft} <small>days</small>`
 }

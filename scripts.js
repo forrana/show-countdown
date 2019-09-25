@@ -1,6 +1,7 @@
 const countdownTimer = document.querySelector("#time");
 const countdownDater = document.querySelector("#date");
-const deadlineDate = new Date("10.17.2019 20:00");
+const deadlineDate = new Date("10/17/2019");
+deadlineDate.setHours(20);
 
 
 function calculateCountDown() {

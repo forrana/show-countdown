@@ -11,3 +11,7 @@ body section{
 body section h1 {
   text-align: center;
 }
+
+body section h1 small{
+  font-size: 16px;
+}
